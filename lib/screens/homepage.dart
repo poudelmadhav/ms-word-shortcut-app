@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../data/data.dart';
 import './about_page.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+import 'package:share/share.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -32,7 +35,7 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: Icon(Icons.info_outline),
+              leading: Icon(Icons.info),
               title: Text("About"),
               onTap: () {
                 Navigator.push(
@@ -43,6 +46,21 @@ class HomePage extends StatelessWidget {
                     },
                   ),
                 );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.star),
+              title: Text("Rate"),
+              onTap: () {
+                launch(
+                    "https://play.google.com/store/apps/details?id=com.hamropatro");
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.share),
+              title: Text("Share"),
+              onTap: () {
+                Share.share("Check out my website https://poudelmadhav.com.np", subject: "Look what I made!");
               },
             ),
           ],
