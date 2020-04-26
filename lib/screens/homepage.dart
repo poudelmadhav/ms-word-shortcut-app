@@ -8,7 +8,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("MS Word Shortcuts"),
       ),
-      body: ListView.builder(
+      body: ListView.separated(
+        separatorBuilder: (context, index) {
+          return Divider(
+            thickness: 2.0,
+          );
+        },
         itemCount: data.length,
         itemBuilder: (context, index) {
           return ListTile(
