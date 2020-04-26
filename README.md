@@ -3,4 +3,4 @@
 MS Word shortcut app with drawer and navigation between screens
 
 # Screenshot
-![MS Word shortcut app](https://res.cloudinary.com/paudel/image/upload/v1587913551/fjvhqapym1jfuowpjj8p.gif)
+![MS Word shortcut app](https://res.cloudinary.com/paudel/image/upload/v1587913821/ms-word-shortcut-app.gif)
